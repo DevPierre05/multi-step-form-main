@@ -7,7 +7,7 @@ function Step({ number, label }) {
     <div className="flex gap-3 text-xs uppercase sm:items-center">
       <h1
         className={`text-Alabaster flex h-8 w-8 items-center justify-center rounded-full border sm:h-6 sm:w-6 ${
-          stepNumber === number
+          stepNumber === number || stepNumber > number && number === 4
             ? "bg-Light_blue text-Marine_blue border-none font-bold"
             : ""
         }`}

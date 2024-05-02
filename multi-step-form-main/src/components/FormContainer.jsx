@@ -4,6 +4,7 @@ import SideBar from "./SideBar";
 import SubscriptionPlanForms from "./steps/SubscriptionPlanForms"
 import AddOnForm from "./steps/AddOnForm";
 import SummaryPage from "./steps/SummaryPage";
+import FormCompletion from "./FormCompletion";
 
 function FormContainer() {
   const { stepNumber } = useMultiForms();
@@ -14,6 +15,7 @@ function FormContainer() {
       {stepNumber === 2 && <SubscriptionPlanForms /> }
       {stepNumber === 3 && <AddOnForm /> }
       {stepNumber === 4 && <SummaryPage /> }
+      {stepNumber === 5 && <FormCompletion />}
     </section>
   );
 }
